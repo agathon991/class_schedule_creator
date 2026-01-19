@@ -1,0 +1,5 @@
+# High School Schedule Creator
+# No external dependencies required - uses Python 3.10+ standard library only
+#
+# Required Python version: 3.10+
+# (uses dataclasses, type hints with list/dict generics, and Enum)
