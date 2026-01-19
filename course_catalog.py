@@ -409,7 +409,7 @@ def create_course_catalog() -> dict[str, Course]:
         subject_area=SubjectArea.VISUAL_PERFORMING_ARTS,
         credits=10,
         semesters=2,
-        room_type_required=RoomType.ART_ROOM,
+        room_type_required=RoomType.GENERAL,  # Uses general classroom
         grade_levels=[9, 10, 11, 12],
         description="Introduction to Visual Arts"
     )
@@ -420,7 +420,7 @@ def create_course_catalog() -> dict[str, Course]:
         subject_area=SubjectArea.VISUAL_PERFORMING_ARTS,
         credits=10,
         semesters=2,
-        room_type_required=RoomType.ART_ROOM,
+        room_type_required=RoomType.GENERAL,  # Uses general classroom
         grade_levels=[10, 11, 12],
         prerequisites=["ART1"],
         description="Intermediate Visual Arts"
@@ -432,7 +432,7 @@ def create_course_catalog() -> dict[str, Course]:
         subject_area=SubjectArea.VISUAL_PERFORMING_ARTS,
         credits=10,
         semesters=2,
-        room_type_required=RoomType.MUSIC_ROOM,
+        room_type_required=RoomType.GENERAL,  # Uses general classroom
         grade_levels=[9, 10, 11, 12],
         description="Introduction to Music"
     )
@@ -510,7 +510,7 @@ def create_course_catalog() -> dict[str, Course]:
         subject_area=SubjectArea.PHYSICAL_EDUCATION,
         credits=10,
         semesters=2,
-        room_type_required=RoomType.GYM,
+        room_type_required=RoomType.GYM,  # Gymnasium with basketball court
         grade_levels=[9],
         description="Freshman Physical Education"
     )
@@ -521,7 +521,7 @@ def create_course_catalog() -> dict[str, Course]:
         subject_area=SubjectArea.PHYSICAL_EDUCATION,
         credits=10,
         semesters=2,
-        room_type_required=RoomType.GYM,
+        room_type_required=RoomType.GYM,  # Gymnasium with basketball court
         grade_levels=[10],
         prerequisites=["PE9"],
         description="Sophomore Physical Education"

@@ -11,6 +11,14 @@ Features:
 - Constraint-based scheduling algorithm
 - Resource optimization (minimum classrooms and teachers)
 - 4-year course planning for each graduation path
+
+Actual Physical Constraints:
+- 10 general purpose classrooms
+- 1 chemistry lab
+- 1 biology/science lab
+- 1 computer lab
+- 1 robotics lab
+- Total: 14 rooms
 """
 
 from models import GraduationPath, RoomType, SubjectArea, CourseLevel
@@ -234,12 +242,38 @@ def print_detailed_resource_analysis(students_per_path, max_class_size, periods_
     return requirements
 
 
+def print_actual_facilities():
+    """Print the actual facilities available at the school."""
+    print("""
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                        ACTUAL SCHOOL FACILITIES                              │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  The school has the following classrooms available:                          │
+│                                                                              │
+│  General Purpose Classrooms ............... 10                               │
+│  Chemistry Laboratory ..................... 1                                │
+│  Biology/Science Laboratory ............... 1                                │
+│  Computer Laboratory ...................... 1                                │
+│  Robotics Laboratory ...................... 1                                │
+│  Gymnasium (basketball court + weights) ... 1                                │
+│  ─────────────────────────────────────────────                               │
+│  TOTAL ROOMS .............................. 15                               │
+│                                                                              │
+│  Note: Art and music classes will use general classrooms.                    │
+│        No dedicated theater/performing arts space.                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+""")
+
+
 def main():
     """Main entry point."""
     print_header()
+    print_actual_facilities()
     print_graduation_requirements()
 
-    # Configuration - Medium enrollment as specified
+    # Configuration based on actual classroom constraints
+    # Maximum feasible: 25 students per path (75 total)
+    # Using 20 per path to leave some buffer
     students_per_path = {
         GraduationPath.MINIMUM: 20,
         GraduationPath.PRE_MED: 20,

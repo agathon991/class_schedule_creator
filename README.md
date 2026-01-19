@@ -75,40 +75,49 @@ Designed for Computer Science, Computer Engineering, and Chemical Engineering pa
 - **Islamic Studies**: 4 years (one per grade level)
 - **Quran Studies**: 4 years (one per grade level)
 
-## Special Facilities
+## Actual School Facilities
 
-The school includes the following specialized classrooms:
-- Chemistry Laboratory
-- Biology/Science Laboratory
-- Computer Laboratory
-- Robotics Laboratory
-- Art Room
-- Gymnasium
-- Music Room
+The school has the following classrooms:
+- **General Purpose Classrooms: 10**
+- **Chemistry Laboratory: 1**
+- **Biology/Science Laboratory: 1**
+- **Computer Laboratory: 1**
+- **Robotics Laboratory: 1**
+- **Gymnasium: 1** (with basketball court and weights room)
+- **Total: 15 rooms**
 
-## Resource Analysis (60 students, 20 per path)
+Note: Art and music classes use general classrooms. No dedicated theater/performing arts space.
 
-With medium enrollment (20 students per graduation path):
+## Capacity Analysis
 
-### Minimum Classrooms: 18
-- General Classrooms: 12
-- Chemistry Laboratory: 1
-- Biology/Science Laboratory: 1
-- Computer Laboratory: 1
-- Robotics Laboratory: 1
-- Art Room: 1
-- Gymnasium: 1
+With 15 available rooms and 6 periods per day:
 
-### Minimum Teachers: 22
-- History/Social Science: 3
-- English: 3 (1 AP-qualified)
-- Mathematics: 3 (1 AP-qualified)
-- Laboratory Science: 2 (1 AP-qualified)
-- World Languages (Arabic): 2
-- Visual/Performing Arts: 1
-- Computer Science/Robotics: 1 (1 AP-qualified)
-- Physical Education: 2
-- Religious Studies: 5
+### Maximum Feasible Enrollment
+- **Maximum: 25 students per graduation path (75 total students)**
+- At 25 students per path, 58 of 60 general classroom periods are used
+- The bottleneck is general classrooms, not specialized labs
+
+### Recommended Enrollment (20 per path, 60 total)
+
+**Teachers Needed: 22**
+| Subject Area | Teachers | Notes |
+|--------------|----------|-------|
+| History/Social Science | 3 | |
+| English | 3 | 1 AP-qualified |
+| Mathematics | 3 | 1 AP-qualified |
+| Laboratory Science | 2 | 1 AP-qualified |
+| World Languages (Arabic) | 2 | |
+| Visual/Performing Arts | 1 | |
+| Computer Science/Robotics | 1 | 1 AP-qualified |
+| Physical Education | 2 | |
+| Religious Studies | 5 | |
+
+### Lower Enrollment Option (15 per path, 45 total)
+
+If you want smaller class sizes or fewer teachers:
+- **Teachers Needed: 17**
+- More scheduling flexibility
+- Same classroom usage (courses still run, just smaller sections)
 
 ## Constraints Enforced
 
