@@ -273,11 +273,10 @@ def main():
 
     # Configuration based on actual classroom constraints
     # Maximum feasible: 25 students per path (75 total)
-    # Using 20 per path to leave some buffer
     students_per_path = {
-        GraduationPath.MINIMUM: 20,
-        GraduationPath.PRE_MED: 20,
-        GraduationPath.ENGINEERING: 20,
+        GraduationPath.MINIMUM: 25,
+        GraduationPath.PRE_MED: 25,
+        GraduationPath.ENGINEERING: 25,
     }
     max_class_size = 25
     periods_per_day = 6

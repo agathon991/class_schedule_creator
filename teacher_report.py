@@ -10,7 +10,7 @@ from graduation_paths import get_all_paths
 from resource_calculator import ResourceCalculator
 
 
-def generate_teacher_report(students_per_path: int = 20):
+def generate_teacher_report(students_per_path: int = 25):
     """Generate a detailed teacher assignment report."""
 
     paths = get_all_paths()
@@ -307,4 +307,4 @@ def generate_teacher_report(students_per_path: int = 20):
 
 
 if __name__ == "__main__":
-    generate_teacher_report(students_per_path=20)
+    generate_teacher_report(students_per_path=25)
