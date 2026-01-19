@@ -173,40 +173,32 @@ def generate_teacher_report(students_per_path: int = 20):
     print("   Total: 3 sections/day")
 
     # =========================================================================
-    # RELIGIOUS STUDIES (5 teachers)
+    # RELIGIOUS STUDIES (3 teachers)
+    # Islamic Studies & Quran is ONE year-long course per grade:
+    #   Semester 1: Islamic Studies focus
+    #   Semester 2: Quran focus
     # =========================================================================
     print("\n" + "─" * 80)
-    print("RELIGIOUS STUDIES DEPARTMENT (5 teachers)")
+    print("RELIGIOUS STUDIES DEPARTMENT (3 teachers)")
     print("─" * 80)
+    print("\n   Note: Each course is year-long with Islamic Studies (Sem 1) + Quran (Sem 2)")
 
-    print("\n🕌 Islamic Studies Teacher 1")
+    print("\n🕌 Religious Studies Teacher 1")
     print("   Courses:")
-    print("   • Islamic Studies 1 (9th grade, Sem 1) - 3 sections")
-    print("   • Quran Studies 1 (9th grade, Sem 2) - 3 sections")
-    print("   Total: 3 sections/semester")
+    print("   • Religious Studies 1 (9th grade) - 3 sections")
+    print("   • Religious Studies 2 (10th grade) - 2 sections")
+    print("   Total: 5 sections/day (full load)")
 
-    print("\n🕌 Islamic Studies Teacher 2")
+    print("\n🕌 Religious Studies Teacher 2")
     print("   Courses:")
-    print("   • Islamic Studies 2 (10th grade, Sem 1) - 3 sections")
-    print("   • Quran Studies 2 (10th grade, Sem 2) - 3 sections")
-    print("   Total: 3 sections/semester")
+    print("   • Religious Studies 2 (10th grade) - 1 section")
+    print("   • Religious Studies 3 (11th grade) - 3 sections")
+    print("   Total: 4 sections/day")
 
-    print("\n🕌 Islamic Studies Teacher 3")
+    print("\n🕌 Religious Studies Teacher 3")
     print("   Courses:")
-    print("   • Islamic Studies 3 (11th grade, Sem 1) - 3 sections")
-    print("   • Quran Studies 3 (11th grade, Sem 2) - 3 sections")
-    print("   Total: 3 sections/semester")
-
-    print("\n🕌 Islamic Studies Teacher 4")
-    print("   Courses:")
-    print("   • Islamic Studies 4 (12th grade, Sem 1) - 3 sections")
-    print("   • Quran Studies 4 (12th grade, Sem 2) - 3 sections")
-    print("   Total: 3 sections/semester")
-
-    print("\n🕌 Islamic Studies Teacher 5 (Part-time or shared)")
-    print("   Courses:")
-    print("   • Additional sections as needed for scheduling flexibility")
-    print("   Total: 1-2 sections/semester")
+    print("   • Religious Studies 4 (12th grade) - 3 sections")
+    print("   Total: 3 sections/day")
 
     # =========================================================================
     # PHYSICAL EDUCATION (2 teachers)
@@ -270,7 +262,7 @@ def generate_teacher_report(students_per_path: int = 20):
         ("Science", 2, 1, "BIO, CHEM, AP Bio, AP Chem, AP Physics 1"),
         ("History/Social Science", 3, 0, "World Hist, US Hist, Govt, Econ"),
         ("Arabic", 2, 0, "Arabic 1, 2, 3, 4"),
-        ("Religious Studies", 5, 0, "Islamic Studies 1-4, Quran 1-4"),
+        ("Religious Studies", 3, 0, "REL 1-4 (Islamic Studies + Quran)"),
         ("Physical Education", 2, 0, "PE 9, PE 10"),
         ("Arts", 1, 0, "Art 1"),
         ("Technology", 1, 1, "AP CSP, AP CSA, Robotics, Adv Robotics, AP Psych"),
@@ -293,16 +285,16 @@ def generate_teacher_report(students_per_path: int = 20):
 
     grade_courses = {
         9: ["English 9", "Algebra 1", "Biology", "Arabic 1", "PE 9",
-            "Islamic Studies 1", "Quran Studies 1", "AP CS Principles*"],
+            "Religious Studies 1 (Islamic Studies/Quran)", "AP CS Principles*"],
         10: ["English 10", "Geometry", "Chemistry", "World History",
-             "Arabic 1/2", "PE 10", "Islamic Studies 2", "Quran Studies 2",
+             "Arabic 1/2", "PE 10", "Religious Studies 2 (Islamic Studies/Quran)",
              "AP CS A*"],
         11: ["English 11 / AP English Lang", "Algebra 2", "AP Biology*",
              "World History / US History", "Arabic 2/3", "Art 1",
-             "Islamic Studies 3", "Quran Studies 3", "AP Physics 1*", "Robotics*"],
+             "Religious Studies 3 (Islamic Studies/Quran)", "AP Physics 1*", "Robotics*"],
         12: ["English 12 / AP English Lit", "Pre-Calc / AP Calculus AB",
              "AP Chemistry*", "US History", "Government", "Economics",
-             "Arabic 3/4", "Islamic Studies 4", "Quran Studies 4",
+             "Arabic 3/4", "Religious Studies 4 (Islamic Studies/Quran)",
              "AP Psychology*", "Advanced Robotics*"]
     }
 

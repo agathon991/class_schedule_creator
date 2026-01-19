@@ -61,27 +61,27 @@ def create_minimum_path() -> GraduationPathPlan:
         # Freshman Year (Grade 9) - 6 classes per semester
         YearPlan(
             year=1,
-            semester1_courses=["ENG9", "ALG1", "BIO", "ARAB1", "PE9", "ISLAM1"],
-            semester2_courses=["ENG9", "ALG1", "BIO", "ARAB1", "PE9", "QURAN1"]
+            semester1_courses=["ENG9", "ALG1", "BIO", "ARAB1", "PE9", "REL1"],
+            semester2_courses=["ENG9", "ALG1", "BIO", "ARAB1", "PE9", "REL1"]
         ),
         # Sophomore Year (Grade 10) - 6 classes per semester
         YearPlan(
             year=2,
-            semester1_courses=["ENG10", "GEOM", "CHEM", "ARAB2", "PE10", "ISLAM2"],
-            semester2_courses=["ENG10", "GEOM", "CHEM", "ARAB2", "PE10", "QURAN2"]
+            semester1_courses=["ENG10", "GEOM", "CHEM", "ARAB2", "PE10", "REL2"],
+            semester2_courses=["ENG10", "GEOM", "CHEM", "ARAB2", "PE10", "REL2"]
         ),
         # Junior Year (Grade 11) - 6 classes per semester
         YearPlan(
             year=3,
-            semester1_courses=["ENG11", "ALG2", "WHIST", "ART1", "ARAB3", "ISLAM3"],
-            semester2_courses=["ENG11", "ALG2", "WHIST", "ART1", "ARAB3", "QURAN3"]
+            semester1_courses=["ENG11", "ALG2", "WHIST", "ART1", "ARAB3", "REL3"],
+            semester2_courses=["ENG11", "ALG2", "WHIST", "ART1", "ARAB3", "REL3"]
         ),
         # Senior Year (Grade 12) - 6 classes per semester
         # Govt and Econ are 1-semester courses
         YearPlan(
             year=4,
-            semester1_courses=["ENG12", "PRECALC", "USHIST", "GOVT", "ARAB4", "ISLAM4"],
-            semester2_courses=["ENG12", "PRECALC", "USHIST", "ECON", "ARAB4", "QURAN4"]
+            semester1_courses=["ENG12", "PRECALC", "USHIST", "GOVT", "ARAB4", "REL4"],
+            semester2_courses=["ENG12", "PRECALC", "USHIST", "ECON", "ARAB4", "REL4"]
         ),
     ]
 
@@ -114,26 +114,26 @@ def create_premed_path() -> GraduationPathPlan:
         # Freshman Year (Grade 9) - Build strong foundation
         YearPlan(
             year=1,
-            semester1_courses=["ENG9", "ALG1", "BIO", "ARAB1", "PE9", "ISLAM1"],
-            semester2_courses=["ENG9", "ALG1", "BIO", "ARAB1", "PE9", "QURAN1"]
+            semester1_courses=["ENG9", "ALG1", "BIO", "ARAB1", "PE9", "REL1"],
+            semester2_courses=["ENG9", "ALG1", "BIO", "ARAB1", "PE9", "REL1"]
         ),
         # Sophomore Year (Grade 10) - Continue foundation, start Chemistry
         YearPlan(
             year=2,
-            semester1_courses=["ENG10", "GEOM", "CHEM", "WHIST", "ARAB2", "ISLAM2"],
-            semester2_courses=["ENG10", "GEOM", "CHEM", "WHIST", "PE10", "QURAN2"]
+            semester1_courses=["ENG10", "GEOM", "CHEM", "WHIST", "ARAB2", "REL2"],
+            semester2_courses=["ENG10", "GEOM", "CHEM", "WHIST", "PE10", "REL2"]
         ),
         # Junior Year (Grade 11) - AP Sciences begin
         YearPlan(
             year=3,
-            semester1_courses=["ENG11-AP", "ALG2", "BIO-AP", "USHIST", "ART1", "ISLAM3"],
-            semester2_courses=["ENG11-AP", "ALG2", "BIO-AP", "USHIST", "ART1", "QURAN3"]
+            semester1_courses=["ENG11-AP", "ALG2", "BIO-AP", "USHIST", "ART1", "REL3"],
+            semester2_courses=["ENG11-AP", "ALG2", "BIO-AP", "USHIST", "ART1", "REL3"]
         ),
         # Senior Year (Grade 12) - Peak AP load
         YearPlan(
             year=4,
-            semester1_courses=["ENG12-AP", "CALC-AP-AB", "CHEM-AP", "PSYCH-AP", "GOVT", "ISLAM4"],
-            semester2_courses=["ENG12-AP", "CALC-AP-AB", "CHEM-AP", "PSYCH-AP", "ECON", "QURAN4"]
+            semester1_courses=["ENG12-AP", "CALC-AP-AB", "CHEM-AP", "PSYCH-AP", "GOVT", "REL4"],
+            semester2_courses=["ENG12-AP", "CALC-AP-AB", "CHEM-AP", "PSYCH-AP", "ECON", "REL4"]
         ),
     ]
 
@@ -168,26 +168,26 @@ def create_engineering_path() -> GraduationPathPlan:
         # Freshman Year (Grade 9) - Foundation + intro to CS
         YearPlan(
             year=1,
-            semester1_courses=["ENG9", "ALG1", "BIO", "CSP-AP", "PE9", "ISLAM1"],
-            semester2_courses=["ENG9", "ALG1", "BIO", "CSP-AP", "PE9", "QURAN1"]
+            semester1_courses=["ENG9", "ALG1", "BIO", "CSP-AP", "PE9", "REL1"],
+            semester2_courses=["ENG9", "ALG1", "BIO", "CSP-AP", "PE9", "REL1"]
         ),
         # Sophomore Year (Grade 10) - Math + CS progression
         YearPlan(
             year=2,
-            semester1_courses=["ENG10", "GEOM", "CHEM", "CSA-AP", "ARAB1", "ISLAM2"],
-            semester2_courses=["ENG10", "GEOM", "CHEM", "CSA-AP", "PE10", "QURAN2"]
+            semester1_courses=["ENG10", "GEOM", "CHEM", "CSA-AP", "ARAB1", "REL2"],
+            semester2_courses=["ENG10", "GEOM", "CHEM", "CSA-AP", "PE10", "REL2"]
         ),
         # Junior Year (Grade 11) - AP Sciences + Robotics
         YearPlan(
             year=3,
-            semester1_courses=["ENG11", "ALG2", "PHYS-AP-1", "ROBOTICS", "ARAB2", "ISLAM3"],
-            semester2_courses=["ENG11", "ALG2", "PHYS-AP-1", "ROBOTICS", "WHIST", "QURAN3"]
+            semester1_courses=["ENG11", "ALG2", "PHYS-AP-1", "ROBOTICS", "ARAB2", "REL3"],
+            semester2_courses=["ENG11", "ALG2", "PHYS-AP-1", "ROBOTICS", "WHIST", "REL3"]
         ),
         # Senior Year (Grade 12) - Calculus + Advanced work
         YearPlan(
             year=4,
-            semester1_courses=["ENG12", "CALC-AP-AB", "CHEM-AP", "ROBOTICS-ADV", "GOVT", "ISLAM4"],
-            semester2_courses=["ENG12", "CALC-AP-AB", "CHEM-AP", "USHIST", "ECON", "QURAN4"]
+            semester1_courses=["ENG12", "CALC-AP-AB", "CHEM-AP", "ROBOTICS-ADV", "GOVT", "REL4"],
+            semester2_courses=["ENG12", "CALC-AP-AB", "CHEM-AP", "USHIST", "ECON", "REL4"]
         ),
     ]
 

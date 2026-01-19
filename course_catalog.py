@@ -529,92 +529,52 @@ def create_course_catalog() -> dict[str, Course]:
 
     # =========================================================================
     # RELIGIOUS STUDIES (School-specific requirements)
+    # Islamic Studies & Quran is ONE course per year:
+    #   - Semester 1: Islamic Studies focus
+    #   - Semester 2: Quran focus
     # =========================================================================
 
-    courses["ISLAM1"] = Course(
-        code="ISLAM1",
-        name="Islamic Studies 1",
+    courses["REL1"] = Course(
+        code="REL1",
+        name="Religious Studies 1 (Islamic Studies & Quran)",
         subject_area=SubjectArea.RELIGIOUS_STUDIES,
         credits=10,
         semesters=2,
         grade_levels=[9],
-        description="Introduction to Islamic Studies"
+        description="Freshman Religious Studies: Islamic Studies (Sem 1) & Quran (Sem 2)"
     )
 
-    courses["ISLAM2"] = Course(
-        code="ISLAM2",
-        name="Islamic Studies 2",
+    courses["REL2"] = Course(
+        code="REL2",
+        name="Religious Studies 2 (Islamic Studies & Quran)",
         subject_area=SubjectArea.RELIGIOUS_STUDIES,
         credits=10,
         semesters=2,
         grade_levels=[10],
-        prerequisites=["ISLAM1"],
-        description="Intermediate Islamic Studies"
+        prerequisites=["REL1"],
+        description="Sophomore Religious Studies: Islamic Studies (Sem 1) & Quran (Sem 2)"
     )
 
-    courses["ISLAM3"] = Course(
-        code="ISLAM3",
-        name="Islamic Studies 3",
+    courses["REL3"] = Course(
+        code="REL3",
+        name="Religious Studies 3 (Islamic Studies & Quran)",
         subject_area=SubjectArea.RELIGIOUS_STUDIES,
         credits=10,
         semesters=2,
         grade_levels=[11],
-        prerequisites=["ISLAM2"],
-        description="Advanced Islamic Studies"
+        prerequisites=["REL2"],
+        description="Junior Religious Studies: Islamic Studies (Sem 1) & Quran (Sem 2)"
     )
 
-    courses["ISLAM4"] = Course(
-        code="ISLAM4",
-        name="Islamic Studies 4",
+    courses["REL4"] = Course(
+        code="REL4",
+        name="Religious Studies 4 (Islamic Studies & Quran)",
         subject_area=SubjectArea.RELIGIOUS_STUDIES,
         credits=10,
         semesters=2,
         grade_levels=[12],
-        prerequisites=["ISLAM3"],
-        description="Senior Islamic Studies"
-    )
-
-    courses["QURAN1"] = Course(
-        code="QURAN1",
-        name="Quran Studies 1",
-        subject_area=SubjectArea.RELIGIOUS_STUDIES,
-        credits=10,
-        semesters=2,
-        grade_levels=[9],
-        description="Introduction to Quran Studies"
-    )
-
-    courses["QURAN2"] = Course(
-        code="QURAN2",
-        name="Quran Studies 2",
-        subject_area=SubjectArea.RELIGIOUS_STUDIES,
-        credits=10,
-        semesters=2,
-        grade_levels=[10],
-        prerequisites=["QURAN1"],
-        description="Intermediate Quran Studies"
-    )
-
-    courses["QURAN3"] = Course(
-        code="QURAN3",
-        name="Quran Studies 3",
-        subject_area=SubjectArea.RELIGIOUS_STUDIES,
-        credits=10,
-        semesters=2,
-        grade_levels=[11],
-        prerequisites=["QURAN2"],
-        description="Advanced Quran Studies"
-    )
-
-    courses["QURAN4"] = Course(
-        code="QURAN4",
-        name="Quran Studies 4",
-        subject_area=SubjectArea.RELIGIOUS_STUDIES,
-        credits=10,
-        semesters=2,
-        grade_levels=[12],
-        prerequisites=["QURAN3"],
-        description="Senior Quran Studies"
+        prerequisites=["REL3"],
+        description="Senior Religious Studies: Islamic Studies (Sem 1) & Quran (Sem 2)"
     )
 
     return courses

@@ -72,8 +72,8 @@ Designed for Computer Science, Computer Engineering, and Chemical Engineering pa
 ## School-Specific Requirements
 
 - **Physical Education**: 2 years (California state requirement)
-- **Islamic Studies**: 4 years (one per grade level)
-- **Quran Studies**: 4 years (one per grade level)
+- **Religious Studies**: 4 years (one per grade level)
+  - Each year-long course combines Islamic Studies (Semester 1) and Quran (Semester 2)
 
 ## Actual School Facilities
 
@@ -99,7 +99,7 @@ With 15 available rooms and 6 periods per day:
 
 ### Recommended Enrollment (20 per path, 60 total)
 
-**Teachers Needed: 22**
+**Teachers Needed: 20**
 | Subject Area | Teachers | Notes |
 |--------------|----------|-------|
 | History/Social Science | 3 | |
@@ -110,12 +110,12 @@ With 15 available rooms and 6 periods per day:
 | Visual/Performing Arts | 1 | |
 | Computer Science/Robotics | 1 | 1 AP-qualified |
 | Physical Education | 2 | |
-| Religious Studies | 5 | |
+| Religious Studies | 3 | Islamic Studies + Quran combined |
 
 ### Lower Enrollment Option (15 per path, 45 total)
 
 If you want smaller class sizes or fewer teachers:
-- **Teachers Needed: 17**
+- **Teachers Needed: 15**
 - More scheduling flexibility
 - Same classroom usage (courses still run, just smaller sections)
 
